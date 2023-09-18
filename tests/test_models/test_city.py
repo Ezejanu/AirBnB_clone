@@ -46,7 +46,7 @@ class TestCity_init(unittest.TestCase):
         self.assertLess(i1.created_at, i2.created_at)
 
     def test_updated_at_is_datetime(self):
-        '''Test that ``updated_at`` is a publis attribute of type datettime.'''
+        '''Test that ``updated_at`` is a public attribute of type datettime.'''
         self.assertEqual(type(City().updated_at), datetime)
 
     def test_updated_at_right_time(self):
