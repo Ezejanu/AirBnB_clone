@@ -113,7 +113,7 @@ class TestUser_init(unittest.TestCase):
         dt = datetime.now()
         dt_isoformat = dt.isoformat()
         user = User('1234', id='123', created_at=dt_isoformat,
-                       updated_at=dt_isoformat)
+                    updated_at=dt_isoformat)
         self.assertEqual(user.id, '123')
         self.assertEqual(user.created_at, dt)
         self.assertEqual(user.updated_at, dt)
